@@ -11,4 +11,7 @@ async def dut_test(dut):
         dut.b.value=b[i]
         await Timer(1, units="ns")
         actual=dut.y.value
+        
+    assert actual = 
+    expected
     assert 0, "Test Not Implemented Error"
