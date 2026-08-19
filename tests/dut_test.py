@@ -10,8 +10,8 @@ async def dut_test(dut):
         dut.a.value=a[i]
         dut.b.value=b[i]
         await Timer(1, units="ns")
-        actual==dut.y.value
+        actual=dut.y.value
         
-    assert actual =y[i] 
+    assert actual ==y[i] 
    
     assert 0, "Test Not Implemented Error"
