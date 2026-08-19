@@ -9,5 +9,5 @@ async def dut_test(dut):
     for i in range(4):
         dut.a.value=a[i]
         dut.b.value=b[i]
-        
+        await Timer(1, units="ns")
     assert 0, "Test Not Implemented Error"
