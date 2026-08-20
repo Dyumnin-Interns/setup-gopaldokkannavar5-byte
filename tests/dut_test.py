@@ -1,5 +1,5 @@
 import cocotb
-from cocotb.triggers import Timer
+from cocotb.triggers import Timer, RisingEdge
 @cocotb.test()
 async def dut_test(dut):
     
@@ -10,7 +10,7 @@ async def dut_test(dut):
         dut.a.value=a[i]
         dut.b.value=b[i]
         await Timer(1, units="ns")
-        assert dut.y.value == y[i], f"Error at Iteration i"
+        assert dut.y.value == y[i], f"Error at Iteration {i}"
         
     
    
