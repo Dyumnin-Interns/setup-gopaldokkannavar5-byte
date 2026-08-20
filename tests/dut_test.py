@@ -11,7 +11,3 @@ async def dut_test(dut):
         dut.b.value=b[i]
         await Timer(1, units="ns")
         assert dut.y.value == y[i], f"Error at Iteration {i}"
-        
-    
-   
-    assert 0, "Test Not Implemented Error"
